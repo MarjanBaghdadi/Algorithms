@@ -1,3 +1,4 @@
+#credit: NeetCode Youtbe Channel
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         maxSub = nums[0]
