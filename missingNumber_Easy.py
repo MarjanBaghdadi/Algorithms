@@ -8,4 +8,17 @@ class Solution:
                 return i
         
                       
+        """
+        # XOR solution: if we XOR all the numbers with all the indices(+1 extra for the missing number) 
+        # the only missing number will be the one left over at the end 
         
+        solution = 0
+        
+        for n in nums:
+            solution = solution ^ n
+            
+        for i in range(len(nums)+1):
+            solution = solution ^ i
+              
+        return solution
+        """
