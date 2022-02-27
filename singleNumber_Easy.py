@@ -1,8 +1,22 @@
+class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         
+        xor = 0
+        for i in nums:
+            xor = xor ^ i
+            
+        return xor
+        
+        
+        
+        
+        """
         n=len(nums)
         r=nums[0]
         for i in range(1,n):
             r = r ^ nums[i] 
 
-        return r
+        return r        
+        
+        
+        """
